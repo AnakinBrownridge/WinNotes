@@ -1,17 +1,17 @@
 [Setup]
 AppId={{3E658137-CE80-49E3-8084-FD0B0158CA31}
-AppName="NoteBot"
+AppName="WinNotes"
 AppVersion="1.6"
-AppPublisher="Federico Dossena"
-AppPublisherURL="http://notebot.fdossena.com/"
-AppSupportURL="http://notebot.fdossena.com/"
-AppUpdatesURL="http://notebot.fdossena.com/"
-DefaultDirName="{pf}\NoteBot"
-DefaultGroupName="NoteBot"
+AppPublisher="AnakinBrownridge"
+AppPublisherURL="https://github.com/AnakinBrownridge/WinNotes"
+AppSupportURL="https://github.com/AnakinBrownridge/WinNotes"
+AppUpdatesURL="https://github.com/AnakinBrownridge/WinNotes"
+DefaultDirName="{pf}\WinNotes"
+DefaultGroupName="WinNotes"
 DisableProgramGroupPage=yes
 LicenseFile=gpl-3.0.txt
 OutputDir=.
-OutputBaseFilename=notebot-setup
+OutputBaseFilename=winnotes-setup
 Compression=lzma2/ultra64
 LZMAAlgorithm=1
 LZMAMatchFinder=BT
@@ -32,11 +32,11 @@ Name: "italian"; MessagesFile: "compiler:Languages\Italian.isl"
 Source: "setupFiles\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs sortfilesbyextension;
 
 [Icons]
-Name: "{group}\NoteBot"; Filename: "{app}\StickyNotes.exe"
+Name: "{group}\WinNotes"; Filename: "{app}\WinNotes.exe"
 
 [Run]
-Filename:"{app}\StickyNotes.exe"; Flags:runasoriginaluser nowait;
+Filename:"{app}\WinNotes.exe"; Flags:runasoriginaluser nowait;
 
 [Registry]
-Root: HKLM; Subkey: "SOFTWARE\Microsoft\Windows\CurrentVersion\Run"; ValueName: "NoteBot"; ValueType: string; ValueData: """{app}\StickyNotes.exe"" -autostartup"; Flags: uninsdeletevalue 
-Root: HKLM32; Subkey: "SOFTWARE\Microsoft\Windows\CurrentVersion\Run"; ValueName: "NoteBot"; ValueType: string; ValueData: """{app}\StickyNotes.exe"" -autostartup"; Flags: uninsdeletevalue 
+Root: HKLM; Subkey: "SOFTWARE\Microsoft\Windows\CurrentVersion\Run"; ValueName: "WinNotes"; ValueType: string; ValueData: """{app}\WinNotes.exe"" -autostartup"; Flags: uninsdeletevalue
+Root: HKLM32; Subkey: "SOFTWARE\Microsoft\Windows\CurrentVersion\Run"; ValueName: "WinNotes"; ValueType: string; ValueData: """{app}\WinNotes.exe"" -autostartup"; Flags: uninsdeletevalue
